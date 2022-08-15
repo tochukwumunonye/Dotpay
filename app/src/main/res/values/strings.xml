@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Dotpay</string>
+    <string name="blush">Blush</string>
+    <string name="bronzer">Bronzer</string>
+    <string name="eyebrow">Eyebrow</string>
+    <string name="eyeliner">Eyeliner</string>
+    <string name="eyeshadow">Eyeshadow</string>
+    <string name="foundation">Foundation</string>
+    <string name="lip_liner">Lip liner</string>
+    <string name="mascara">Mascara</string>
+    <string name="nail_polish">Nail polish</string>
+    <string name="lipstick">Lipstick</string>
+    <string name="select_a_product_type">Select A Product Type</string>
+    <string name="brand">Brand</string>
+    <string name="choose_a_brand">Choose A Brand</string>
+    <string name="start">start</string>
+
+    <string-array name="brand_names">
+        <item>dior</item>
+        <item>almay</item>
+        <item>marienatie</item>
+        <item>dalish</item>
+        <item>ten</item>
+        <item>elf</item>
+        <item>naked</item>
+        <item>fenty</item>
+        <item>glossier</item>
+        <item>l\'oreal</item>
+        <item>wet n wild</item>
+        <item>orly</item>
+        <item>covergirl</item>
+        <item>suncoat</item>
+    </string-array>
+</resources>
+
+
