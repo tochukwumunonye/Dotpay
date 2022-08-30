@@ -38,7 +38,7 @@ class MakeupViewModelTest {
         runTest {
             whenever(mockMakeupRepository.getMakeupItems("dior", "brush")).thenReturn(expectedProducts)
             makeupViewModel = MakeupViewModel(mockMakeupRepository)
-            makeupViewModel.search("dior", "brush")
+            makeupViewModel.search("lol", "lol")
             val stateFlow = makeupViewModel.viewState.value
             assertEquals(stateFlow, MakeupListViewState.Success(expectedProducts))
         }
