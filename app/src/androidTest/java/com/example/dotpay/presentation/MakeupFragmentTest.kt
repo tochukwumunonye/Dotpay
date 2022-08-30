@@ -1,9 +1,9 @@
 package com.example.dotpay.presentation
 
+import androidx.core.os.bundleOf
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
-import androidx.test.espresso.matcher.ViewMatchers.withId
+import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.filters.MediumTest
 import com.example.dotpay.di.launchFragmentInHiltsContainer
 import com.example.dotpay.domain.model.Makeup
@@ -36,12 +36,14 @@ class MakeupFragmentTest {
     @Test
     fun test_recycler_is_visible_when_data_is_loaded() {
         launchFragmentInHiltsContainer<MakeUpFragment>(
+           bundleOf("selectedBrand" to "dior"),
             fragmentFactory = testFragmentFactory
         ) {
             makeupAdapter.submitList(getListOfMakeup())
         }
 
-        onView(withId(R.id.makeupRecyclerview)).check(matches(isDisplayed()))
+     //   onView(withId(R.id.makeupRecyclerview)).check(matches(isDisplayed()))
+        onView(withId(R.id.brandName)).check(matches(withText("dior")))
     }
 
     private fun getListOfMakeup(): List<Makeup> {
